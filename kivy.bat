@@ -447,6 +447,7 @@ if exist "%~dp0python.exe" (
 if %installkivy%==0 (
     goto end
 )
+dir
 echo %kilog% Preparing Python for Kivy...
 "%~dp0python.exe" -m pip install --upgrade pip wheel setuptools
 set packurl=--extra-index-url https://kivy.org/downloads/packages/simple/
@@ -523,7 +524,7 @@ del /q "%~dp0error.txt"
 if %has_error%==0 (
     if not defined DEBUG (
         echo %kilog% Running touchtracer demo...
-        start "%~dp0python.exe" "%~dp0share\kivy-examples\demo\touchtracer\main.py"
+        start cmd /c ("%~dp0python.exe" "%~dp0share\kivy-examples\demo\touchtracer\main.py")
     )
     (echo cp=%cp%) > "%~dp0config.kivyinstaller"
     (echo cpwhl=%cpwhl%) >> "%~dp0config.kivyinstaller"
