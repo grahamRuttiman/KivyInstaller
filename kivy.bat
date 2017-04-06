@@ -77,9 +77,9 @@ if not %first%==1 (
 )
 if %processor_architecture%==AMD64 (
     set /p arch32="64bit environment detected! Create 32bit instead? y/n"
-    if !arch32!==n (
-        set arch=win_amd64
-    )
+)
+if [%arch32%]==[n] (
+    set arch=win_amd64
 )
 if exist "%~dp0python.exe" (
     echo %kilog% Python is already installed!
