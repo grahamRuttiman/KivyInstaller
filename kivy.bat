@@ -175,7 +175,7 @@ if %arch%==win32 (
             ) else (
                 %down% /transfer "GetPython%pyversion%!pyext!" ^
                 "%pyFTP%%pyversion%/python-%pyversion%!pyext!" ^
-                "%~dp0py%pyversion%!pyext!"
+                "%~dp0py%pyversion%!pyext!" & echo %pyFTP%%pyversion%/python-%pyversion%!pyext!
             )
         ) else (
             %down% /transfer "GetPython%pyversion%!pyext!" ^

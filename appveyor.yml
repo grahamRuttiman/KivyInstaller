@@ -9,78 +9,6 @@ environment:
   LATESTPY36: 3.6.1
 
   matrix:
-  - PY: 27
-    ARCH: 86
-    MASTER: 0
-    ADMIN: 0
-    DESIGNER: 0
-    SHORTCUTS: 0
-  - PY: 27
-    ARCH: 86
-    MASTER: 1
-    ADMIN: 0
-    DESIGNER: 0
-    SHORTCUTS: 0
-  - PY: 27
-    ARCH: 86
-    MASTER: 0
-    ADMIN: 0
-    DESIGNER: 1
-    SHORTCUTS: 0
-  - PY: 27
-    ARCH: 86
-    MASTER: 0
-    ADMIN: 0
-    DESIGNER: 0
-    SHORTCUTS: 1
-
-  - PY: 27
-    ARCH: 64
-    MASTER: 0
-    ADMIN: 0
-    DESIGNER: 0
-    SHORTCUTS: 0
-  - PY: 27
-    ARCH: 64
-    MASTER: 1
-    ADMIN: 0
-    DESIGNER: 0
-    SHORTCUTS: 0
-  - PY: 27
-    ARCH: 64
-    MASTER: 0
-    ADMIN: 0
-    DESIGNER: 1
-    SHORTCUTS: 0
-  - PY: 27
-    ARCH: 64
-    MASTER: 0
-    ADMIN: 0
-    DESIGNER: 0
-    SHORTCUTS: 1
-
-  - PY: 34
-    ARCH: 86
-    MASTER: 0
-    ADMIN: 0
-  - PY: 34
-    ARCH: 86
-    MASTER: 1
-    ADMIN: 0
-
-  - PY: 34
-    ARCH: 64
-    MASTER: 0
-    ADMIN: 0
-  - PY: 34
-    ARCH: 64
-    MASTER: 1
-    ADMIN: 0
-
-  - PY: 35
-    ARCH: 86
-    MASTER: 1
-    ADMIN: 0
   - PY: 35
     ARCH: 86
     MASTER: 1
@@ -89,25 +17,13 @@ environment:
   - PY: 35
     ARCH: 64
     MASTER: 1
-    ADMIN: 0
-  - PY: 35
-    ARCH: 64
-    MASTER: 1
     ADMIN: 1
 
   - PY: 36
     ARCH: 86
     MASTER: 1
-    ADMIN: 0
-  - PY: 36
-    ARCH: 86
-    MASTER: 1
     ADMIN: 1
 
-  - PY: 36
-    ARCH: 64
-    MASTER: 1
-    ADMIN: 0
   - PY: 36
     ARCH: 64
     MASTER: 1
