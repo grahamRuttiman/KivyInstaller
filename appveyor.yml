@@ -227,6 +227,8 @@ build_script:
         (echo|set /p ___="n")|kivy.bat
     )
 
+    if not exist "%cd%\python.exe" (exit /B 1)
+
     REM ***********************************************************************
     REM Check kivy.bat launcher in Quick Launch and SendTo folders + print.   *
     REM ***********************************************************************
