@@ -448,6 +448,7 @@ if %installkivy%==0 (
     goto end
 )
 dir
+type msi.log
 echo %kilog% Preparing Python for Kivy...
 "%~dp0python.exe" -m pip install --upgrade pip wheel setuptools
 set packurl=--extra-index-url https://kivy.org/downloads/packages/simple/
