@@ -6,16 +6,16 @@
 ::If it is not available, download and install to C:\Windows
 ::https://www.microsoft.com/en-us/download/details.aspx?id=18546
 @if not defined DEBUG (echo off)
+if not defined cp2 (set cp2=cp27)
+if not defined cp3 (set cp3=cp35)
+if not defined py2 (set py2=2.7.13)
+if not defined py3 (set py3=3.5.2)
 set xp=0
 set cp=0
 set first=1
 set cpwhl=0
 set stable=1
-set cp2=cp27
-set cp3=cp35
-set py3=3.5.2
 set arch=win32
-set py2=2.7.13
 set pyversion=0
 set gstreamer=0
 set master=1.9.2

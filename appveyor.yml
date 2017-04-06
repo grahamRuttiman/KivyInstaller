@@ -175,13 +175,13 @@ build_script:
     set DEBUG=1 && set choice_python=3
 
     if "%PY%"=="27" (
-        set choice_python=2&& set py2=%LATESTPY2%
+        set choice_python=2&& set py2=%LATESTPY2%&& set cp2=cp27
     ) else if "%PY%"=="34" (
-        set py3=%LATESTPY34%
+        set py3=%LATESTPY34%&& set cp3=cp34
     ) else if "%PY%"=="35" (
-        set py3=%LATESTPY35%
+        set py3=%LATESTPY35%&& set cp3=cp35
     ) else if "%PY%"=="36" (
-        set py3=%LATESTPY36%
+        set py3=%LATESTPY36%&& set cp3=cp36
     )
 
     set choice_kivy=y && set choice_master=n
