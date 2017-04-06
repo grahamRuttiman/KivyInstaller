@@ -4,9 +4,9 @@ environment:
   AVFILE: enable-desktop.ps1
   KVMASTER: 1.9.2
   LATESTPY2: 2.7.13
-  LATESTPY34: 3.4.6
+  LATESTPY34: 3.4.4
   LATESTPY35: 3.5.3
-  LATESTPY36: 3.6.0
+  LATESTPY36: 3.6.1
 
   matrix:
   - PY: 27
